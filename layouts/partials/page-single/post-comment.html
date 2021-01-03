@@ -1,4 +1,7 @@
 {{ if ne .Params.showcomments false }}
+	{{ with .Site.Params.social.twitter }}
+		<p>Want to talk about this post? Find me on <a href="https://twitter.com/{{.}}" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></p>
+	{{ end }}
     {{ if .Site.DisqusShortname }}
         {{ partial "page-single/comment/disqus.html" . }}
     {{ else if .Site.Params.GraphCommentId }}
@@ -8,4 +11,7 @@
     {{ else if .Site.Params.Commento }}
         {{ partial "page-single/comment/commento.html" . }}
     {{ end }}
+    <div>
+
+    </div>
 {{ end }}
