@@ -1,1 +1,2 @@
-
+{{ $js := resources.Get "js/fleck.js" | js.Build "fleck.js" | fingerprint }}
+<script src="{{ $js.RelPermalink }}" type="text/javascript" integrity="{{ $js.Data.Integrity }}"></script>

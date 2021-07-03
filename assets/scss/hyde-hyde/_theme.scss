@@ -31,6 +31,43 @@
 		color: #f4bf75;
 	}
 }
+
+
+.theme-base-custom {
+	.sidebar {
+		background-image: paint(fleck);
+		--fleck-seed: 123449;
+		--fleck-count: 580;
+		--fleck-size-base: 4px;
+		--fleck-color-1: #0193c1;
+		--fleck-color-2: #74d8e6;
+		--fleck-color-3: #0bc0e0;
+		--fleck-color-4: #3ddaf5;
+		--fleck-color-5: #e2f9fe;
+		--fleck-color-6: #02313f;
+		--background-color: #300030;
+	}
+	.content a {
+		color: var(--fleck-color-6);
+	}
+	.related-posts li a:hover {
+		color: #02313f;
+	}
+	.badge-category {
+		background-color: #300030;
+	}
+	.navigation a {
+		border-color: #300030;
+	}
+	.sidebar a:hover {
+		color: #84dce2;
+	}
+
+	.sidebar-about, .sidebar-nav {
+		background-color: #300030;
+		padding: 4px;
+	}
+}
 .theme-base-0b {
 	.sidebar {
 		background-color: #90a959;
