@@ -35,10 +35,11 @@
 
 .theme-base-custom {
 	.sidebar {
-		background-image: paint(fleck);
-		--fleck-seed: 123449;
-		--fleck-count: 580;
-		--fleck-size-base: 4px;
+		background-image: url('/images/speckle.png');
+		background-repeat: repeat;
+		// --fleck-seed: 123449;
+		// --fleck-count: 580;
+		// --fleck-size-base: 4px;
 		--fleck-color-1: #0193c1;
 		--fleck-color-2: #74d8e6;
 		--fleck-color-3: #0bc0e0;
